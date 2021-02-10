@@ -11,6 +11,7 @@
 		3C4D0B5425D390D900CF0DA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B5325D390D900CF0DA7 /* ContentView.swift */; };
 		3C4D0B5625D390DD00CF0DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */; };
 		3C4D0B5925D390DD00CF0DA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4D0B5825D390DD00CF0DA7 /* Preview Assets.xcassets */; };
+		3C4D0B6225D3950500CF0DA7 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6125D3950500CF0DA7 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C4D0B5825D390DD00CF0DA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C4D0B5A25D390DD00CF0DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4D0B6125D3950500CF0DA7 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		3C4D0B5025D390D900CF0DA7 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				3C4D0B6125D3950500CF0DA7 /* Joke.swift */,
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
 				3C4D0B5325D390D900CF0DA7 /* ContentView.swift */,
 				3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				3C4D0B5425D390D900CF0DA7 /* ContentView.swift in Sources */,
 				3C4D0B5225D390D900CF0DA7 /* JokesApp.swift in Sources */,
+				3C4D0B6225D3950500CF0DA7 /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
