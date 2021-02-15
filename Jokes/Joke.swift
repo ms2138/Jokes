@@ -9,6 +9,6 @@ import Foundation
 
 struct Joke: Codable, Identifiable {
     var id: String
-    var joke: String
+    var text: String
     var status: Int
 }
