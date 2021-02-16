@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FooterView: View {
-    var jokes: Jokes
+    @ObservedObject var jokes: Jokes
 
     var body: some View {
         VStack(spacing: 5) {
