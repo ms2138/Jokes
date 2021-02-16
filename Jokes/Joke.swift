@@ -12,3 +12,11 @@ struct Joke: Codable, Identifiable {
     var text: String
     var status: Int
 }
+
+extension Joke {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case text = "joke"
+        case status
+    }
+}
