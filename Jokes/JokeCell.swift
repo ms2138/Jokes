@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct JokeCell: View {
+    var text: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "smiley")
+                .resizable()
+                .frame(width: 30.0, height: 30.0)
+            Text("\(text)")
+        }
+        .padding([.top, .bottom])
     }
 }
 
 struct JokeCell_Previews: PreviewProvider {
     static var previews: some View {
-        JokeCell()
+        JokeCell(text: "Cat goes meow")
     }
 }
