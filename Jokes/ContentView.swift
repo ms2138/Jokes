@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var jokes = Jokes()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(jokes.items) { joke in
+                        JokeCell(text: joke.text)
+                    }
+                }
+                .animation(.default)
+                .listStyle(PlainListStyle())
+                .navigationBarTitle("Jokes")
+            }
+        }
     }
 }
 
