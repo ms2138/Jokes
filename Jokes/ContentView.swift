@@ -21,6 +21,10 @@ struct ContentView: View {
                 .animation(.default)
                 .listStyle(PlainListStyle())
                 .navigationBarTitle("Jokes")
+
+                FooterView(jokes: jokes)
+            }.onAppear {
+                self.jokes.getJokes()
             }
         }
     }
