@@ -17,6 +17,9 @@ struct ContentView: View {
                     ForEach(jokes.items) { joke in
                         JokeCell(text: joke.text)
                     }
+                    .onDelete { indexSet in
+                        jokes.items.remove(atOffsets: indexSet)
+                    }
                 }
                 .animation(.default)
                 .listStyle(PlainListStyle())
