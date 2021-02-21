@@ -9,6 +9,7 @@ import Foundation
 
 class Jokes: ObservableObject {
     @Published var items = [Joke]()
+    @Published var showFavorites = false
 
     func getJokes() {
         let url = URL(string: "https://icanhazdadjoke.com/")!
@@ -26,5 +27,10 @@ class Jokes: ObservableObject {
             }
         }
         task.resume()
+    }
+
+    func markAsFavorite(joke: Joke) {
+        guard let selectedIndex = items.firstIndex(where: { $0.id == joke.id }) else { return }
+        items[selectedIndex].isFavorite.toggle()
     }
 }
