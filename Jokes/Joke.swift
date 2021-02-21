@@ -11,6 +11,7 @@ struct Joke: Codable, Identifiable {
     var id: String
     var text: String
     var status: Int
+    var isFavorite: Bool = false
 }
 
 extension Joke {
