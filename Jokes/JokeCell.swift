@@ -8,21 +8,30 @@
 import SwiftUI
 
 struct JokeCell: View {
-    var text: String
+    var joke: Joke
 
     var body: some View {
         HStack {
-            Image(systemName: "smiley")
-                .resizable()
-                .frame(width: 30.0, height: 30.0)
-            Text("\(text)")
+            if joke.isFavorite {
+                Image(systemName: "face.smiling.fill")
+                    .resizable()
+                    .foregroundColor(.yellow)
+                    .frame(width: 30.0, height: 30.0)
+            } else {
+                Image(systemName: "face.smiling")
+                    .resizable()
+                    .frame(width: 30.0, height: 30.0)
+            }
+            Text("\(joke.text)")
         }
         .padding([.top, .bottom])
     }
 }
 
 struct JokeCell_Previews: PreviewProvider {
+    static let joke = Joke(id: "49484", text: "Hello", status: 43, isFavorite: true)
+
     static var previews: some View {
-        JokeCell(text: "Cat goes meow")
+        JokeCell(joke: joke)
     }
 }
