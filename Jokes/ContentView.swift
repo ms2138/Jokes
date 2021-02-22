@@ -14,8 +14,17 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 List {
+                    Toggle(isOn: $jokes.showFavorites) {
+                        Text("Show Favorites")
+                    }
+                    
                     ForEach(jokes.items) { joke in
-                        JokeCell(text: joke.text)
+                        if !jokes.showFavorites || joke.isFavorite {
+                            JokeCell(joke: joke)
+                                .onTapGesture {
+                                    jokes.markAsFavorite(joke: joke)
+                                }
+                        }
                     }
                     .onDelete { indexSet in
                         jokes.items.remove(atOffsets: indexSet)
