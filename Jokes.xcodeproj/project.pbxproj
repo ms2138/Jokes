@@ -15,6 +15,7 @@
 		3C4D0B6625D39A6400CF0DA7 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */; };
 		3C4D0B6925D8F0C600CF0DA7 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */; };
 		3C4D0B6D25DA295600CF0DA7 /* JokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */; };
+		3CDA3F7D25E4C358009B7C79 /* FileManager+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
 		3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCell.swift; sourceTree = "<group>"; };
+		3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+EXT.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				3C4D0B6125D3950500CF0DA7 /* Joke.swift */,
 				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
+				3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */,
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
 				3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */,
 				3C4D0B5325D390D900CF0DA7 /* ContentView.swift */,
@@ -154,6 +157,7 @@
 				3C4D0B5225D390D900CF0DA7 /* JokesApp.swift in Sources */,
 				3C4D0B6D25DA295600CF0DA7 /* JokeCell.swift in Sources */,
 				3C4D0B6625D39A6400CF0DA7 /* Jokes.swift in Sources */,
+				3CDA3F7D25E4C358009B7C79 /* FileManager+EXT.swift in Sources */,
 				3C4D0B6925D8F0C600CF0DA7 /* FooterView.swift in Sources */,
 				3C4D0B6225D3950500CF0DA7 /* Joke.swift in Sources */,
 			);
