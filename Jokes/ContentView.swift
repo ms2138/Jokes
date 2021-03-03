@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var jokes = Jokes()
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationView {
@@ -17,7 +18,7 @@ struct ContentView: View {
                     Toggle(isOn: $jokes.showFavorites) {
                         Text("Show Favorites")
                     }
-                    
+
                     ForEach(jokes.items) { joke in
                         if !jokes.showFavorites || joke.isFavorite {
                             JokeCell(joke: joke)
@@ -35,8 +36,16 @@ struct ContentView: View {
                 .navigationBarTitle("Jokes")
 
                 FooterView(jokes: jokes)
-            }.onAppear {
-                self.jokes.getJokes()
+            }
+            .onAppear {
+                jokes.load {
+                    if self.jokes.items.count == 0 {
+                        self.jokes.getJokes()
+                    }
+                }
+            }
+            .onChange(of: scenePhase) { phase in
+                if phase == .inactive { jokes.save() }
             }
         }
     }
