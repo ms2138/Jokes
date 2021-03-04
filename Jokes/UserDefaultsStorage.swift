@@ -22,3 +22,9 @@ import Foundation
         }
     }
 }
+
+extension UserDefaultsStorage where Value: ExpressibleByNilLiteral {
+    init(key: String, defaults: UserDefaults = .standard) {
+        self.init(key: key, defaultValue: nil, defaults: defaults)
+    }
+}
