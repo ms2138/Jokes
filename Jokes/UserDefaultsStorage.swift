@@ -8,5 +8,8 @@
 import Foundation
 
 @propertyWrapper struct UserDefaultsStorage<Value> {
-    
+    let key: String
+    var defaults: UserDefaults = .standard
+
+    var wrappedValue: Value
 }
