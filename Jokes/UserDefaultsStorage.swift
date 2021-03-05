@@ -18,7 +18,11 @@ import Foundation
             return value ?? defaultValue
         }
         set {
-            defaults.setValue(newValue, forKey: key)
+            if let optional = newValue as? AnyOptional, optional.isNil {
+                defaults.removeObject(forKey: key)
+            } else {
+                defaults.setValue(newValue, forKey: key)
+            }
         }
     }
 }
@@ -27,4 +31,12 @@ extension UserDefaultsStorage where Value: ExpressibleByNilLiteral {
     init(key: String, defaults: UserDefaults = .standard) {
         self.init(key: key, defaultValue: nil, defaults: defaults)
     }
+}
+
+private protocol AnyOptional {
+    var isNil: Bool { get }
+}
+
+extension Optional: AnyOptional {
+    var isNil: Bool { self == nil }
 }
