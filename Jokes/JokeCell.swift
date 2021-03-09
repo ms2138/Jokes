@@ -29,7 +29,7 @@ struct JokeCell: View {
 }
 
 struct JokeCell_Previews: PreviewProvider {
-    static let joke = Joke(id: "49484", text: "Hello", status: 43, isFavorite: true)
+    static let joke = Joke(id: "49484", text: "Hello", status: 43, isFavorite: CodableBool.init(wrappedValue: true))
 
     static var previews: some View {
         JokeCell(joke: joke)
