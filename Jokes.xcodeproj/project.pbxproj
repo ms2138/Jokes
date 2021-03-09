@@ -16,6 +16,7 @@
 		3C4D0B6925D8F0C600CF0DA7 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */; };
 		3C4D0B6D25DA295600CF0DA7 /* JokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */; };
 		3C5047B225EF65DA00042C43 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5047B125EF65DA00042C43 /* UserDefaultsStorage.swift */; };
+		3C5047B625F734DE00042C43 /* CodableBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5047B525F734DE00042C43 /* CodableBool.swift */; };
 		3C71523225ECCD6800B7F4FA /* JSONDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C71523125ECCD6800B7F4FA /* JSONDataManager.swift */; };
 		3CDA3F7D25E4C358009B7C79 /* FileManager+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCell.swift; sourceTree = "<group>"; };
 		3C5047B125EF65DA00042C43 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		3C5047B525F734DE00042C43 /* CodableBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBool.swift; sourceTree = "<group>"; };
 		3C71523125ECCD6800B7F4FA /* JSONDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataManager.swift; sourceTree = "<group>"; };
 		3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+EXT.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
 				3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */,
 				3C4D0B5325D390D900CF0DA7 /* ContentView.swift */,
+				3C5047B525F734DE00042C43 /* CodableBool.swift */,
 				3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */,
 				3C5047B125EF65DA00042C43 /* UserDefaultsStorage.swift */,
 				3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 			files = (
 				3C4D0B5425D390D900CF0DA7 /* ContentView.swift in Sources */,
 				3C4D0B5225D390D900CF0DA7 /* JokesApp.swift in Sources */,
+				3C5047B625F734DE00042C43 /* CodableBool.swift in Sources */,
 				3C4D0B6D25DA295600CF0DA7 /* JokeCell.swift in Sources */,
 				3C4D0B6625D39A6400CF0DA7 /* Jokes.swift in Sources */,
 				3CDA3F7D25E4C358009B7C79 /* FileManager+EXT.swift in Sources */,
