@@ -11,7 +11,7 @@ struct Joke: Codable, Identifiable {
     var id: String
     var text: String
     var status: Int
-    var isFavorite: Bool = false
+    @CodableBool var isFavorite: Bool
 }
 
 extension Joke {
@@ -19,5 +19,6 @@ extension Joke {
         case id
         case text = "joke"
         case status
+        case isFavorite
     }
 }
