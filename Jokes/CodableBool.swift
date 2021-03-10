@@ -23,3 +23,10 @@ extension CodableBool {
         try container.encode(wrappedValue)
     }
 }
+
+extension KeyedDecodingContainer {
+    func decode(_ type: CodableBool.Type,
+                forKey key: Key) throws -> CodableBool {
+        try decodeIfPresent(type, forKey: key) ?? .init()
+    }
+}
