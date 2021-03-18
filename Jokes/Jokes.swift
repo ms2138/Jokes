@@ -9,7 +9,6 @@ import Foundation
 
 class Jokes: ObservableObject {
     @Published var items = [Joke]()
-    @Published var showFavorites = false
     private static var savedFileURL: URL {
         return FileManager.default.documentsDirectory.appendingPathComponent("jokes.json")
     }
