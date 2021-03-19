@@ -7,20 +7,25 @@
 
 import SwiftUI
 
+enum Settings {
+    static let showFavorites = "showFavorites"
+}
+
 struct ContentView: View {
     @StateObject var jokes = Jokes()
     @Environment(\.scenePhase) private var scenePhase
+    @AppStorage(Settings.showFavorites) private var showFavorites: Bool = false
 
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    Toggle(isOn: $jokes.showFavorites) {
+                    Toggle(isOn: $showFavorites) {
                         Text("Show Favorites")
                     }
 
                     ForEach(jokes.items) { joke in
-                        if !jokes.showFavorites || joke.isFavorite {
+                        if !showFavorites || joke.isFavorite {
                             JokeCell(joke: joke)
                                 .onTapGesture {
                                     jokes.markAsFavorite(joke: joke)
