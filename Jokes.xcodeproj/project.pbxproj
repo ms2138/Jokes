@@ -66,7 +66,7 @@
 		3C4D0B5025D390D900CF0DA7 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
-				3C4D0B6125D3950500CF0DA7 /* Joke.swift */,
+				3CCCDB9126099DC000B4FE63 /* Models */,
 				3C71523125ECCD6800B7F4FA /* JSONDataManager.swift */,
 				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
 				3CCCDB8F26099D6200B4FE63 /* Extensions */,
@@ -96,6 +96,14 @@
 				3CDA3F7C25E4C358009B7C79 /* FileManager+EXT.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CCCDB9126099DC000B4FE63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D0B6125D3950500CF0DA7 /* Joke.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
