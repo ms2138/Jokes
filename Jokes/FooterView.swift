@@ -11,16 +11,20 @@ struct FooterView: View {
     @ObservedObject var jokes: Jokes
 
     var body: some View {
-        VStack(spacing: 5) {
-            Text("Jokes: \(jokes.items.count)")
-                .font(.footnote)
-            Button(action: {
-                self.jokes.getJokes()
-            }, label: {
-                Text("Get Another Joke")
-                    .foregroundColor(.blue)
-                    .font(.caption)
-            })
+        HStack {
+            Spacer()
+            VStack(spacing: 5) {
+                Text("Jokes: \(jokes.items.count)")
+                    .font(.footnote)
+                Button(action: {
+                    self.jokes.getJokes()
+                }, label: {
+                    Text("Get Another Joke")
+                        .foregroundColor(.blue)
+                        .font(.caption)
+                })
+            }
+            Spacer()
         }
     }
 }
