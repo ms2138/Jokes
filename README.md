@@ -1,6 +1,9 @@
 # Jokes
 An application that displays jokes
 
+# Demo
+![Jokes - Animated gif demo](demo.gif)
+
 # Run Project
 To run the project:
 
