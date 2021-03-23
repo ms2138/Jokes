@@ -71,7 +71,7 @@
 				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
 				3CCCDB8F26099D6200B4FE63 /* Extensions */,
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
-				3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */,
+				3CCCDB942609A83600B4FE63 /* Cells */,
 				3C5047B525F734DE00042C43 /* CodableBool.swift */,
 				3CCCDB932609A43D00B4FE63 /* Views */,
 				3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */,
@@ -120,6 +120,14 @@
 				3C4D0B6825D8F0C600CF0DA7 /* FooterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3CCCDB942609A83600B4FE63 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
