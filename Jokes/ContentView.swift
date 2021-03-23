@@ -41,6 +41,7 @@ struct ContentView: View {
                 .navigationBarTitle("Jokes")
 
                 FooterView(jokes: jokes)
+                    .padding(2.0)
             }
             .onAppear {
                 jokes.load {
