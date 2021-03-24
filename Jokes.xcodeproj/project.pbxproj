@@ -70,7 +70,7 @@
 				3CCCDB922609A25900B4FE63 /* Data Managers */,
 				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
 				3CCCDB8F26099D6200B4FE63 /* Extensions */,
-				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
+				3CCCDB97260AE5F400B4FE63 /* App */,
 				3CCCDB942609A83600B4FE63 /* Cells */,
 				3CCCDB96260AE18800B4FE63 /* Property Wrappers */,
 				3CCCDB932609A43D00B4FE63 /* Views */,
@@ -136,6 +136,14 @@
 				3C5047B525F734DE00042C43 /* CodableBool.swift */,
 			);
 			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
+		3CCCDB97260AE5F400B4FE63 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
