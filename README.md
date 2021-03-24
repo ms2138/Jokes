@@ -1,5 +1,5 @@
 # Jokes
-An application that displays jokes
+An application that displays jokes using SwiftUI
 
 # Demo
 ![Jokes - Animated gif demo](demo.gif)
