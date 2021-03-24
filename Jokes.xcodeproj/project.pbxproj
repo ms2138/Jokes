@@ -68,7 +68,7 @@
 			children = (
 				3CCCDB9126099DC000B4FE63 /* Models */,
 				3CCCDB922609A25900B4FE63 /* Data Managers */,
-				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
+				3CCCDB98260AE6CF00B4FE63 /* Observable Objects */,
 				3CCCDB8F26099D6200B4FE63 /* Extensions */,
 				3CCCDB97260AE5F400B4FE63 /* App */,
 				3CCCDB942609A83600B4FE63 /* Cells */,
@@ -144,6 +144,14 @@
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		3CCCDB98260AE6CF00B4FE63 /* Observable Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D0B6525D39A6400CF0DA7 /* Jokes.swift */,
+			);
+			path = "Observable Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
