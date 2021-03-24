@@ -72,7 +72,7 @@
 				3CCCDB8F26099D6200B4FE63 /* Extensions */,
 				3C4D0B5125D390D900CF0DA7 /* JokesApp.swift */,
 				3CCCDB942609A83600B4FE63 /* Cells */,
-				3C5047B525F734DE00042C43 /* CodableBool.swift */,
+				3CCCDB96260AE18800B4FE63 /* Property Wrappers */,
 				3CCCDB932609A43D00B4FE63 /* Views */,
 				3C4D0B5525D390DD00CF0DA7 /* Assets.xcassets */,
 				3C4D0B5A25D390DD00CF0DA7 /* Info.plist */,
@@ -128,6 +128,14 @@
 				3C4D0B6C25DA295600CF0DA7 /* JokeCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		3CCCDB96260AE18800B4FE63 /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				3C5047B525F734DE00042C43 /* CodableBool.swift */,
+			);
+			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
